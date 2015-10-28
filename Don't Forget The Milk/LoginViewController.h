@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "MilkUser.h"
+@interface LoginViewController : UIViewController
 
 
 @end

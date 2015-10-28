@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface AppDelegate ()
 
@@ -16,9 +18,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    BOOL loggedIn=false;
+    self.client = [MSClient clientWithApplicationURLString:@"https://dontforgetthemilk.azure-mobile.net/"
+                                            applicationKey:@"shGQDRgfMbFLUGXTBgxOFhZqlcGIgh14"];
+    self.user = [[MilkUser alloc]init];
+    self.mainMenu = [[MainMenuTableViewController alloc]init];
+   
+    if(!loggedIn){
+        [self loadLoginView];
+    }
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -36,10 +47,21 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [FBSDKAppEvents activateApp];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)loadLoginView{
+    UIStoryboard * loginStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    self.window.rootViewController = [loginStoryboard instantiateInitialViewController];
+}
+
+-(void)loadMainView{
+    UIStoryboard * mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.window.rootViewController = [mainStoryboard instantiateInitialViewController];
 }
 
 @end

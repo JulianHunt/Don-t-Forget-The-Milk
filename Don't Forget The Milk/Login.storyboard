@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D5k-rc-AOp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4ax-ug-h13">
+            <objects>
+                <navigationController id="D5k-rc-AOp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FHy-OH-uHF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ulf-yG-xYA" kind="relationship" relationship="rootViewController" id="CJY-Qs-I8g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQi-KB-dTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1369" y="-49"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="oeq-Rb-WWa">
+            <objects>
+                <viewController id="ulf-yG-xYA" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6dw-aq-xYk"/>
+                        <viewControllerLayoutGuide type="bottom" id="hsC-OS-wOe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WOU-cq-x4W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5i-zg-NzK">
+                                <rect key="frame" x="88" y="269" width="144" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Login With Facebook"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="ulf-yG-xYA" eventType="touchUpInside" id="5eC-i6-dWu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Don't Forget The Milk!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6z-65-gX9">
+                                <rect key="frame" x="75" y="66" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q6z-65-gX9" firstAttribute="centerX" secondItem="WOU-cq-x4W" secondAttribute="centerX" id="BiB-DO-6RO"/>
+                            <constraint firstItem="Q6z-65-gX9" firstAttribute="top" secondItem="6dw-aq-xYk" secondAttribute="bottom" constant="48" id="MSZ-QW-S34"/>
+                            <constraint firstItem="e5i-zg-NzK" firstAttribute="centerY" secondItem="WOU-cq-x4W" secondAttribute="centerY" id="WeD-Sx-Wei"/>
+                            <constraint firstItem="e5i-zg-NzK" firstAttribute="centerX" secondItem="WOU-cq-x4W" secondAttribute="centerX" id="fOt-WS-Yi2"/>
+                            <constraint firstItem="hsC-OS-wOe" firstAttribute="top" secondItem="Q6z-65-gX9" secondAttribute="bottom" constant="479" id="u37-ZY-J3W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BNr-M7-uuk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3h-cj-JK7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-796" y="-49"/>
+        </scene>
+    </scenes>
+</document>

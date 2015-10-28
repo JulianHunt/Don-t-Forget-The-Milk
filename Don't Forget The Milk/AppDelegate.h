@@ -7,11 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
+#import "MilkUser.h"
+#import "LoginViewController.h"
+#import "MainMenuTableViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) MSClient *client;
+@property (strong, nonatomic) MilkUser *user;
+@property (strong, nonatomic) MainMenuTableViewController * mainMenu;
+@property (strong, nonatomic) UINavigationController * navController;
 
-
+-(void)loadLoginView;
+-(void)loadMainView;
 @end
 
