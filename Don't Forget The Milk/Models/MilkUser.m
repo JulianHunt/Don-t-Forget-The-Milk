@@ -7,7 +7,7 @@
 //
 
 #import "MilkUser.h"
-
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 @implementation MilkUser
 -(id)init{
     self.userName = @"unknown";

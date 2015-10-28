@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 @interface MilkUser : NSObject
 
