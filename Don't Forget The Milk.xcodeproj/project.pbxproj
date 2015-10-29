@@ -21,6 +21,9 @@
 		B73B71141BE00BE3003FD8C9 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73B71131BE00BE3003FD8C9 /* NavController.m */; settings = {ASSET_TAGS = (); }; };
 		B73B71161BE13E59003FD8C9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73B71151BE13E59003FD8C9 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
 		B73DA29A1BE160FC004F3CA3 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73DA2991BE160FC004F3CA3 /* WindowsAzureMobileServices.framework */; settings = {ASSET_TAGS = (); }; };
+		B73DA2C31BE2776B004F3CA3 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73DA2C21BE2776B004F3CA3 /* ListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B73DA2C61BE2778E004F3CA3 /* MilkList.m in Sources */ = {isa = PBXBuildFile; fileRef = B73DA2C51BE2778E004F3CA3 /* MilkList.m */; settings = {ASSET_TAGS = (); }; };
+		B73DA2CA1BE277AE004F3CA3 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B73DA2C91BE277AE004F3CA3 /* ListItem.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,12 @@
 		B73B71131BE00BE3003FD8C9 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavController.m; path = Views/NavController.m; sourceTree = "<group>"; };
 		B73B71151BE13E59003FD8C9 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B73DA2991BE160FC004F3CA3 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		B73DA2C11BE2776B004F3CA3 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListTableViewController.h; path = Views/ListTableViewController.h; sourceTree = "<group>"; };
+		B73DA2C21BE2776B004F3CA3 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListTableViewController.m; path = Views/ListTableViewController.m; sourceTree = "<group>"; };
+		B73DA2C41BE2778E004F3CA3 /* MilkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MilkList.h; path = Models/MilkList.h; sourceTree = "<group>"; };
+		B73DA2C51BE2778E004F3CA3 /* MilkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MilkList.m; path = Models/MilkList.m; sourceTree = "<group>"; };
+		B73DA2C81BE277AE004F3CA3 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListItem.h; path = Models/ListItem.h; sourceTree = "<group>"; };
+		B73DA2C91BE277AE004F3CA3 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListItem.m; path = Models/ListItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,10 @@
 			children = (
 				B73B71081BDEA7A1003FD8C9 /* MilkUser.h */,
 				B73B71091BDEA7A1003FD8C9 /* MilkUser.m */,
+				B73DA2C41BE2778E004F3CA3 /* MilkList.h */,
+				B73DA2C51BE2778E004F3CA3 /* MilkList.m */,
+				B73DA2C81BE277AE004F3CA3 /* ListItem.h */,
+				B73DA2C91BE277AE004F3CA3 /* ListItem.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -133,6 +146,8 @@
 				B73B710D1BDFF0B9003FD8C9 /* MainMenuTableViewController.m */,
 				B73B71121BE00BE3003FD8C9 /* NavController.h */,
 				B73B71131BE00BE3003FD8C9 /* NavController.m */,
+				B73DA2C11BE2776B004F3CA3 /* ListTableViewController.h */,
+				B73DA2C21BE2776B004F3CA3 /* ListTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -210,9 +225,12 @@
 			files = (
 				B73B70EC1BD80C03003FD8C9 /* LoginViewController.m in Sources */,
 				B73B710A1BDEA7A1003FD8C9 /* MilkUser.m in Sources */,
+				B73DA2CA1BE277AE004F3CA3 /* ListItem.m in Sources */,
 				B73B70E91BD80C03003FD8C9 /* AppDelegate.m in Sources */,
+				B73DA2C31BE2776B004F3CA3 /* ListTableViewController.m in Sources */,
 				B73B71141BE00BE3003FD8C9 /* NavController.m in Sources */,
 				B73B70E61BD80C03003FD8C9 /* main.m in Sources */,
+				B73DA2C61BE2778E004F3CA3 /* MilkList.m in Sources */,
 				B73B710E1BDFF0B9003FD8C9 /* MainMenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
